@@ -1,0 +1,60 @@
+:root {
+  --color-background: #151515;
+  --link: #aac7ff;
+  --color-on-background: #ddd;
+  --color-border: #292f38;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.45;
+  font-size: 18px;
+  background: var(--color-background);
+  color: var(--color-on-background);
+  counter-reset: sidenote-counter;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0;
+}
+
+nav li:not(:last-child) {
+  margin-right: 2em;
+}
+
+section {
+  margin-top: 2rem;
+}

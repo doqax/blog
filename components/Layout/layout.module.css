@@ -1,0 +1,197 @@
+.container {
+  padding: 0 1rem;
+  max-width: 48rem;
+  margin: 1rem auto;
+}
+
+.header {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 6px;
+}
+
+.footer {
+  margin-top: auto;
+  border-top: 1px solid var(--color-border);
+  padding-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 48rem;
+}
+
+.main {
+  width: 87.5%;
+  padding-left: 12.5%;
+  font-size: 15px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: content-box;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.main span.newthought {
+  font-variant: small-caps;
+  font-size: 1em;
+}
+
+.main h1 {
+  font-weight: 400;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.6rem;
+  line-height: 1;
+}
+
+.main h2 {
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 2.1rem;
+  margin-bottom: 1.4rem;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.main h3 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1.4rem;
+  line-height: 1;
+}
+
+.main p,
+.main dl,
+.main ol,
+.main ul {
+  font-size: 18px;
+  line-height: 1.5rem;
+}
+
+.main section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.main hr {
+  display: block;
+  height: 1px;
+  width: 55%;
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  margin: 0.8em 0;
+  padding: 0;
+}
+
+.main p {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  padding-right: 0;
+  vertical-align: baseline;
+  max-width: 55%;
+}
+
+.main > p,
+.main > footer,
+.main > table {
+  width: 55%;
+}
+
+.main li {
+  max-width: 55%;
+}
+
+.main > dl,
+.main > ol,
+.main > ul {
+  width: 50%;
+  -webkit-padding-start: 5%;
+  max-width: 55%;
+}
+
+.main dt:not(:first-child),
+.main li:not(:first-child) {
+  margin-top: 0.25rem;
+}
+
+/* Sidenotes, margin notes, figures, captions */
+.main img {
+  max-width: 100%;
+}
+
+
+.main blockquote p {
+  width: 55%;
+  margin-right: 40px;
+}
+
+.main blockquote footer {
+  width: 55%;
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+@media (max-width: 760px) {
+  .main {
+    width: 84%;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .main p {
+    max-width: none;
+  }
+
+  .main li {
+    max-width: none;
+  }
+
+  .main hr,
+  .main p,
+  .main footer,
+  .main table {
+    width: 100%;
+  }
+
+  .main > pre > code {
+    width: 97%;
+  }
+
+  .main > dl,
+  .main > ol,
+  .main > ul {
+    width: 90%;
+  }
+
+  .main figure {
+    max-width: 90%;
+  }
+
+  .main figcaption,
+  .main figure.fullwidth figcaption {
+    margin-right: 0%;
+    max-width: none;
+  }
+
+  .main blockquote {
+    margin-left: 1.5em;
+    margin-right: 0em;
+  }
+
+  .main blockquote p,
+  .main blockquote footer {
+    width: 100%;
+  }
+
+
+  .main div.table-wrapper,
+  .main table {
+    width: 85%;
+  }
+
+  .main img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,41 @@
+.btn {
+    position: relative;
+    padding: 5px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #f0f6fc1a;
+    background-color: rgb(30, 30, 30);
+    color: #c9d1d9;
+    border-radius: 6px;
+    transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.btn:hover {
+    background-color: rgb(30, 30, 30);
+    border-color: #8b949e;
+    transition-duration: .1s;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 8px 1fr;
+}
+
+.center {
+    display: inline-block;
+    height: 100%;
+    margin-right: 2px;
+    position: relative;
+    height: 17.5px;
+}
+
+.center svg {
+    position: absolute;
+    bottom: 0;
+    left: -8px;
+    color: #8b949e;
+}

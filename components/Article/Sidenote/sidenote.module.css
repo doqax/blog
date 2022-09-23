@@ -1,0 +1,80 @@
+/* Change this stupid thing */
+
+.sidenote,
+.marginnote {
+  float: right;
+  clear: right;
+  margin-right: -60%;
+  width: 50%;
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  vertical-align: baseline;
+  position: relative;
+}
+
+.sidenoteNumber {
+  counter-increment: sidenote-counter;
+}
+
+.sidenoteNumber:after,
+.sidenote:before {
+  position: relative;
+  vertical-align: baseline;
+}
+
+.sidenoteNumber:after {
+  content: counter(sidenote-counter);
+  font-size: 0.7rem;
+  top: -0.5rem;
+  left: 0.1rem;
+  margin-right: 0.1rem;
+}
+
+.sidenote:before {
+  content: counter(sidenote-counter) " ";
+  font-size: 0.7rem;
+  top: -0.5rem;
+}
+
+
+input.marginToggle {
+  display: none;
+}
+
+.side label.sidenoteNumber {
+  display: inline-block;
+  max-height: 2rem; /* should be less than or equal to paragraph line-height */
+}
+
+.side label.marginToggle:not(.sidenoteNumber) {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .side label.margin-toggle:not(.sidenote-number) {
+    display: inline;
+  }
+
+  .sidenote,
+  .marginnote {
+    display: none;
+  }
+
+  .marginToggle:checked + .sidenote,
+  .marginToggle:checked + .marginnote {
+    display: block;
+    float: left;
+    left: 1rem;
+    clear: both;
+    width: 95%;
+    margin: 1rem 2.5%;
+    /* vertical-align: baseline; */
+    position: relative;
+  }
+
+  .side label {
+    cursor: pointer;
+  }
+}

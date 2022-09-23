@@ -1,0 +1,10 @@
+.lightText {
+  color: #a199a9;
+  display: block;
+  height: 100%;
+  line-height: 28px;
+}
+
+.alignRight {
+  margin-left: auto;
+}
