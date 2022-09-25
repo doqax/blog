@@ -27,13 +27,13 @@ export default function Layout({ children, isArticle }) {
   const { pathname, back } = useRouter();
   return (
     <>
-      <div className={styles.container}>
-        <Head>
-          <link rel="icon" href="data;," />
-          <meta name="description" content="Just a web site" />
-          <meta name="og:title" content={name} />
-          <title>{name}</title>
-        </Head>
+      <Head>
+        <link rel="icon" href="data;," />
+        <meta name="description" content="Just a web site" />
+        <meta name="og:title" content={name} />
+        <title>{name}</title>
+      </Head>
+      <div className={styles.grid}>
         {/* Make it good on mobile */}
         <header className={styles.header}>
           <h3>
@@ -43,18 +43,16 @@ export default function Layout({ children, isArticle }) {
           </h3>
           <Nav currentPathname={pathname} />
         </header>
+        <main className={isArticle ? styles.main : styles.container}>
+          {children}
+          {isArticle && (
+            <Button onClick={back} Icon={GoChevronLeft} withIcon>
+              Back
+            </Button>
+          )}
+        </main>
+        <footer className={styles.footer}>asd</footer>
       </div>
-      <main className={isArticle ? styles.main : styles.container}>
-        {children}
-        {isArticle && (
-          <Button onClick={back} Icon={GoChevronLeft} withIcon>
-            Back
-          </Button>
-        )}
-      </main>
-      {/* <footer className={styles.footer}>
-          
-      </footer> */}
     </>
   );
 }
