@@ -6,6 +6,7 @@ import { isCurrentPathName } from "lib/utils";
 const navTitles = [
   { pathname: "", title: "Home" },
   { pathname: "posts", title: "Blog" },
+  { pathname: "about", title: "About"},
   { pathname: "random", title: "Random" },
 ];
 export default function Nav({ currentPathname }) {

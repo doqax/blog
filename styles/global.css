@@ -3,6 +3,7 @@
   --link: #aac7ff;
   --color-on-background: #ddd;
   --color-border: #292f38;
+  --color-text-muted: #8b949e;
 }
 
 html,
@@ -36,25 +37,31 @@ img {
   display: block;
 }
 
-nav {
-  margin-left: auto;
-}
-
-nav ul {
+nav ul, footer ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-nav li {
+footer ul {
+  text-align: center;
+}
+
+nav li, footer li {
   display: inline-block;
   margin: 0;
 }
 
-nav li:not(:last-child) {
+nav li:not(:last-child), footer li:not(:last-child) {
   margin-right: 2em;
 }
 
 section {
   margin-top: 2rem;
+}
+
+@media (max-width: 760px) {
+  nav ul, footer ul {
+    text-align: center;
+  }
 }

@@ -1,0 +1,14 @@
+.footer {
+  grid-area: footer;
+  border-top: 1px solid var(--color-border);
+  padding-top: 4px;
+}
+
+
+.footerLink {
+  font-size: 16px;
+}
+
+a.footerLink {
+  color: var(--color-text-muted);
+}

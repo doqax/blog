@@ -12,6 +12,7 @@
   line-height: 1.3;
   vertical-align: baseline;
   position: relative;
+  color: var(--color-text-muted);
 }
 
 .sidenoteNumber {
@@ -36,6 +37,7 @@
   content: counter(sidenote-counter) " ";
   font-size: 0.7rem;
   top: -0.5rem;
+  color: var(--color-on-background);
 }
 
 

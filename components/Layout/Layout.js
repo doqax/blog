@@ -10,18 +10,9 @@ import styles from "./layout.module.css";
 
 import Button from "components/Button/Button";
 import Nav from "components/Nav/Nav";
+import Footer from "components/Footer/Footer";
 
 const name = "Dorian Collier";
-
-// Onglets - About | Blog | Work | CV
-// Write a small text about the website
-// Write an about Page
-// Make a CV
-// Write an article
-// French stuff
-
-// Refactor css once it works
-// Maybe use styled-system or something like that
 
 export default function Layout({ children, isArticle }) {
   const { pathname, back } = useRouter();
@@ -51,7 +42,7 @@ export default function Layout({ children, isArticle }) {
             </Button>
           )}
         </main>
-        <footer className={styles.footer}>asd</footer>
+        <Footer />
       </div>
     </>
   );

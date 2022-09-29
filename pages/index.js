@@ -8,13 +8,6 @@ import Layout from "components/Layout/Layout";
 export default function Home({ allPostsData }) {
   return (
     <Layout>
-      <section className={utilStyles.introduction}>
-        <p>
-          Hello, I'm Dorian, a developer living in Belgium. I'm currently taking
-          a break to learn a bit more about programming. I mostly write for
-          myself.
-        </p>
-      </section>
       <section>
         <h3>Latest posts</h3>
         <ul className={utilStyles.list}>
