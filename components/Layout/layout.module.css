@@ -31,7 +31,7 @@
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  box-sizing: content-box;
+  /* box-sizing: content-box; */
   margin-bottom: 2rem;
   position: relative;
 }
@@ -143,11 +143,11 @@
   }
   .grid {
     grid-template-rows: auto 1fr 40px;
-    grid-template-columns: 0 100% 0;
+    grid-template-columns: 1fr;
     grid-template-areas:
-      ". header ."
-      ". main ."
-      ". footer .";
+      "header"
+      "main"
+      "footer";
     padding: 0;
   }
   .main {

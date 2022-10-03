@@ -5,6 +5,10 @@ import { getSortedPostsData } from "lib/posts";
 import Date from "components/Date/Date";
 import Layout from "components/Layout/Layout";
 
+// Make sure Images are good to go
+// Improve Home
+// Write an about page
+
 export default function Home({ allPostsData }) {
   return (
     <Layout>

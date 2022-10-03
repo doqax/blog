@@ -23,6 +23,7 @@ export default function Layout({ children, isArticle }) {
         <meta name="description" content="Just a web site" />
         <meta name="og:title" content={name} />
         <title>{name}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className={styles.grid}>
         {/* Make it good on mobile */}
