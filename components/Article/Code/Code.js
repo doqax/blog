@@ -9,7 +9,7 @@ SyntaxHighlighter.registerLanguage("jsx", jsx);
 export default function Code({ className, ...props }) {
   const match = /language-(\w+)/.exec(className || "");
   return (
-    <span className={style.contain}>
+    <span className={style.fullwidth}>
       {match ? (
         <SyntaxHighlighter
           language={match[1]}
@@ -17,7 +17,7 @@ export default function Code({ className, ...props }) {
           {...props}
           // wrapLongLines
           style={vscDarkPlus}
-          customStyle={{ fontSize: "1em" }}
+          customStyle={{ fontSize: "1em", backgroundColor: "#151515" }}
           codeTagProps={{
             style: {
               lineHeight: "inherit",

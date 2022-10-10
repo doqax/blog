@@ -2,7 +2,7 @@
   --color-background: #151515;
   --link: #aac7ff;
   --color-on-background: #ddd;
-  --color-border: #292f38;
+  --color-border: rgba(255, 255, 255, 0.1);
   --color-text-muted: #8b949e;
 }
 

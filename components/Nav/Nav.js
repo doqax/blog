@@ -7,7 +7,7 @@ const navTitles = [
   { pathname: "", title: "Home" },
   { pathname: "posts", title: "Blog" },
   { pathname: "about", title: "About"},
-  { pathname: "random", title: "Random" },
+  { pathname: "random", title: "Blogue" },
 ];
 export default function Nav({ currentPathname }) {
   return (

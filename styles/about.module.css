@@ -1,0 +1,26 @@
+.introduction {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    font-size: 18px;
+    margin: 2rem 0;
+    align-items: center;
+    column-gap: 2rem;
+  }
+
+.image {
+    text-align: center;
+    max-width: 500px;
+}
+
+.text {
+    margin-left: 1rem;
+}
+
+@media (max-width: 760px) {
+    .introduction {
+        grid-template-columns: 1fr;
+    }
+    .text {
+        margin: 1rem;
+    }
+}
