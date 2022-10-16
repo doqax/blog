@@ -13,6 +13,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout>
       <section>
+      <p>Work in progress</p>
         <h3>Latest posts</h3>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (

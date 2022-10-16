@@ -16,6 +16,9 @@ const components = {
   Figure: (props) => <Figure {...props} />,
   code: (props) => <Code {...props} />,
   a: (props) => <ImprovedLink {...props} />,
+  Hr: () => (
+    <div style={{ marginBottom: "3rem", height: "1px", width: "1px" }} />
+  ),
 };
 
 export default function Article({ source, date, title }) {
