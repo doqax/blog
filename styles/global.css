@@ -60,6 +60,10 @@ section {
   margin-top: 2rem;
 }
 
+blockquote {
+  margin-top: 0;
+}
+
 @media (max-width: 760px) {
   nav ul, footer ul {
     text-align: center;
