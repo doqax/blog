@@ -31,3 +31,4 @@ yarn-error.log*
 
 # personal
 /personal
+/posts/tufte-test.mdx
