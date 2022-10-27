@@ -3,8 +3,8 @@ import Link from "next/link";
 import { isCurrentPathName } from "lib/utils";
 
 //   { pathname: "projects", title: "Projects" },
+  // { pathname: "", title: "Home" },
 const navTitles = [
-  { pathname: "", title: "Home" },
   { pathname: "posts", title: "Blog" },
   { pathname: "about", title: "About"},
   { pathname: "random", title: "Blogue" },
