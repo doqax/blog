@@ -20,7 +20,7 @@ export default function Layout({ children, isArticle }) {
     <>
       <Head>
         <link rel="icon" href="data;," />
-        <meta name="description" content="Just a web site" />
+        <meta name="description" content="My blog" />
         <meta name="og:title" content={name} />
         <title>{name}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -29,9 +29,7 @@ export default function Layout({ children, isArticle }) {
         {/* Make it good on mobile */}
         <header className={styles.header}>
           <h3>
-            <Link href="/">
-              <a className={utilStyles.colorInherit}>{name}</a>
-            </Link>
+            {name}
           </h3>
           <Nav currentPathname={pathname} />
         </header>

@@ -135,8 +135,8 @@
   font-size: 0.8rem;
   text-align: right;
 }
-
-@media (max-width: 760px) {
+/* Find a transition between 760 and 1200 */
+@media (max-width: 900px) {
   .header {
     text-align: center;
   }
@@ -188,7 +188,7 @@
   }
 
   .main figure {
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .main figcaption,
@@ -198,7 +198,7 @@
   }
 
   .main blockquote {
-    margin-left: 1.5em;
+    margin-left: 0;
     margin-right: 0em;
   }
 

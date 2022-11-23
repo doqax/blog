@@ -16,7 +16,7 @@ export default function About() {
           />
         </div>
         <div className={styles.text}>
-          Hi, I'm Dorian, just a developer. I spend my time reading, writing, hiking, running, listening to music and meditating when shit hits the fan. My French side is an amateur poet and the English one writes code to live. Sometimes I mix them up.
+          Hi, I'm Dorian, just a developer. I spend my time reading, writing, hiking, running and meditating when shit hits the fan.
         </div>
       </section>
     </Layout>
