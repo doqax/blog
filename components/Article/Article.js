@@ -11,7 +11,7 @@ const Code = dynamic(() => import("./Code/Code"));
 
 const components = {
   Sidenote: ({ note, withNumber, id }) => (
-    <Sidenote note={note} withNumber={withNumber} id={id} />
+    <></>
   ),
   Figure: (props) => <Figure {...props} />,
   code: (props) => <Code {...props} />,

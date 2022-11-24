@@ -1,5 +1,7 @@
 import styles from "./footer.module.css";
 
+
+// Put this in the about page
 const navTitles = [
   { href: "github.com/doqax", title: "Github" },
   // { href: "twitter.com/doqax", title: "Twitter" },
@@ -9,7 +11,7 @@ const navTitles = [
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <ul>
+      {/* <ul>
         {navTitles.map(({ href, title }) => (
           <li key={title}>
             <a
@@ -22,7 +24,7 @@ export default function Footer() {
             </a>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </footer>
   );
 }

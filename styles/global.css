@@ -1,10 +1,19 @@
 :root {
-  --color-background: #151515;
+  --color-background: #ffffff;
+  --link: #15141A;
+  --color-on-background: #15141A;
+  --color-border: #482936;
+  --color-text-muted: #5B5B66;
+
+  /* DARK MODE ? */
+  /* --color-background: #151515;
   --link: #aac7ff;
   --color-on-background: #ddd;
   --color-border: rgba(255, 255, 255, 0.1);
-  --color-text-muted: #8b949e;
+  --color-text-muted: #8b949e; */
 }
+
+
 
 html,
 body {
@@ -37,7 +46,12 @@ img {
   display: block;
 }
 
-nav ul, footer ul {
+nav {
+  margin-top: 1.2rem;
+}
+
+nav ul {
+  text-align: right;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -49,6 +63,8 @@ footer ul {
 
 nav li, footer li {
   display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
   margin: 0;
 }
 

@@ -1,13 +1,9 @@
 import Link from "next/link";
-
 import { isCurrentPathName } from "lib/utils";
 
-//   { pathname: "projects", title: "Projects" },
-  // { pathname: "", title: "Home" },
 const navTitles = [
-  { pathname: "posts", title: "Blog" },
+  //   { pathname: "projects", title: "Projects" },
   { pathname: "about", title: "About"},
-  { pathname: "random", title: "Blogue" },
 ];
 export default function Nav({ currentPathname }) {
   return (

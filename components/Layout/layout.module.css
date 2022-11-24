@@ -1,7 +1,7 @@
 .grid {
   display: grid;
   grid-template-rows: auto 1fr 40px;
-  grid-template-columns: 1fr 48rem 1fr;
+  grid-template-columns: 1fr 700px 1fr;
   grid-template-areas:
     ". header ."
     ". main ."
@@ -18,15 +18,17 @@
 .header {
   grid-area: header;
   margin-bottom: 1rem;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 2px solid var(--color-border);
   padding-bottom: 6px;
 }
 
+.header h3 {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
 .main {
-  grid-column: 1 / span 3;
-  grid-row: 2 / span 1;
-  width: 87.5%;
-  padding-left: 12.5%;
+  grid-area: main;
   font-size: 15px;
   margin-left: auto;
   margin-right: auto;
@@ -43,7 +45,7 @@
   font-weight: 400;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
-  font-size: 2.6rem;
+  font-size: 2rem;
   line-height: 1;
 }
 
@@ -70,7 +72,7 @@
 .main ol,
 .main ul {
   font-size: 18px;
-  line-height: 1.55rem;
+  line-height: 1.4;
 }
 
 .main section {
@@ -93,25 +95,6 @@
   margin-bottom: 1.2rem;
   padding-right: 0;
   vertical-align: baseline;
-  max-width: 55%;
-}
-
-.main > p,
-.main > footer,
-.main > table {
-  width: 55%;
-}
-
-.main li {
-  max-width: 55%;
-}
-
-.main > dl,
-.main > ol,
-.main > ul {
-  width: 50%;
-  -webkit-padding-start: 5%;
-  max-width: 55%;
 }
 
 .main dt:not(:first-child),
@@ -126,12 +109,10 @@
 
 
 .main blockquote p {
-  width: 55%;
   margin-right: 40px;
 }
 
 .main blockquote footer {
-  width: 55%;
   font-size: 0.8rem;
   text-align: right;
 }

@@ -10,8 +10,8 @@ export default function About() {
           <Image
             src="/images/me_cut.jpg"
             alt="Picture of Dorian"
-            width={285.21}
-            height={300}
+            width={237.67}
+            height={250}
             style={{ borderRadius: "100%" }}
           />
         </div>
