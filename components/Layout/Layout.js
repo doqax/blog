@@ -8,7 +8,7 @@ import Footer from "components/Footer/Footer";
 const name = "Dorian Collier";
 
 export default function Layout({ children, isArticle }) {
-  const { pathname, back } = useRouter();
+  const { pathname } = useRouter();
   return (
     <>
       <Head>
@@ -21,19 +21,10 @@ export default function Layout({ children, isArticle }) {
       <div className={styles.grid}>
         {/* Make it good on mobile */}
         <header className={styles.header}>
-          {/* <Link href="/">
-            <h3>Blog</h3>
-          </Link> */}
-
           <Nav currentPathname={pathname} />
         </header>
         <main className={isArticle ? styles.main : styles.container}>
           {children}
-          {/* {isArticle && (
-            <Button onClick={back} Icon={GoChevronLeft} withIcon>
-              Back
-            </Button>
-          )} */}
         </main>
         <Footer />
       </div>

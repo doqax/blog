@@ -1,6 +1,5 @@
 import Link from "next/link";
-// import { GoLinkExternal } from 'react-icons/go';
-// <GoLinkExternal fontSize={12} p={0} />
+
 export default function ImprovedLink({ href, children }) {
   const isExternal = href.includes("http");
   return isExternal ? (

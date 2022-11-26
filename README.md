@@ -2,7 +2,6 @@
 ## TODO
 
 - [ ] Sidenote
-- [ ] About page
 - [ ] Code
 - [ ] Tag
 - [ ] Accessibility
@@ -10,3 +9,5 @@
 - [ ] Newsletter
 - [ ] See also
 - [ ] Filter settings ? Not sure
+
+https://issendai.livejournal.com/572510.html
