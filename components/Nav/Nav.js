@@ -11,9 +11,7 @@ export default function Nav({ currentPathname }) {
       <ul>
         {navTitles.map(({ pathname, title }) => (
           <li key={pathname}>
-            {isCurrentPathName(pathname, currentPathname) ? (
-              <div>{title}</div>
-            ) : (
+            {isCurrentPathName(pathname, currentPathname) ? title : (
               <Link href={`/${pathname}`}>
                 <a>{title}</a>
               </Link>

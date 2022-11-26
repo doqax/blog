@@ -1,10 +1,10 @@
 import { format } from "lib/utils";
 import style from "./date.module.css";
 
-export default function Date({ dateString, alignRight = false }) {
+export default function Date({ dateString, alignRight = false, full = false }) {
   const time = (
     <time dateTime={dateString} className={style.lightText}>
-      {format(dateString)}
+      {format(dateString, full)}
     </time>
   );
 

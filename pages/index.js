@@ -14,6 +14,8 @@ function DateHeader({ currentYear, children }) {
   );
 }
 
+// Remove ul and li
+
 function Post({ title, date, id }) {
   return (
     <li className={utilStyles.listItem}>

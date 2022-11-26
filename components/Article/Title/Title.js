@@ -7,7 +7,7 @@ export default function Title({ title, date }) {
     <div className={styles.title}>
       <h1>{title}</h1>
       <div className={styles.date}>
-        <Date dateString={date} />
+        <Date dateString={date} full />
       </div>
     </div>
   );
