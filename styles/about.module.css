@@ -16,7 +16,14 @@
 
 .image {
   margin-bottom: 1rem;
-  text-align: center;
+}
+
+.corner {
+  margin: 0 auto;
+  height: 150px;
+  width: 143px;
+  border-radius: 100%;
+  border: 1px solid #15141A;
 }
 
 .text {
