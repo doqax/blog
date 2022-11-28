@@ -33,7 +33,7 @@
 
 :root {
   --color-background: #ffffff;
-  --link: #003eaa;
+  --link: rgb(30, 131, 210);
   --color-on-background: #15141A;
   --color-border: #482936;
   --color-text-muted: #5B5B66;
@@ -54,7 +54,7 @@ body {
   margin: 0;
   font-family: 'IBM Plex Serif', serif;
   line-height: 1.45;
-  font-size: 17px;
+  font-size: 18px;
   background: var(--color-background);
   color: var(--color-on-background);
   counter-reset: sidenote-counter;
@@ -65,7 +65,7 @@ body {
 }
 
 a {
-  color: var(--color-on-background);
+  color: var(--link);
   font-family: 'IBM Plex Sans', sans-serif;
   text-decoration: none;
 }
@@ -97,9 +97,13 @@ footer ul {
 nav li, footer li {
   font-family: sans-serif;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   margin: 0;
+}
+
+nav li a {
+  color: var(--color-on-background);
 }
 
 nav li:not(:last-child), footer li:not(:last-child) {

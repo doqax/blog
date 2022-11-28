@@ -11,6 +11,10 @@
   font-weight: 600;
 }
 
+.listItem a {
+  color: var(--color-on-background);
+}
+
 .currentYear:first-child {
   margin-top: 1rem;
 }

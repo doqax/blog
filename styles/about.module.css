@@ -11,7 +11,11 @@
 }
 
 .introduction a {
-  font-weight: 700;
+  font-weight: 600;
+}
+
+.introduction svg {
+  color: var(--color-on-background);
 }
 
 .image {

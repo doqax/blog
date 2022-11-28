@@ -72,7 +72,7 @@
 .main ol,
 .main ul {
   /* font-size: 18px; */
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .main section {
@@ -118,12 +118,8 @@
   text-align: right;
 }
 
-.main a {
-  /* color: var(--link); */
-  font-weight: 600;
-}
 /* Find a transition between 760 and 1200 */
-@media (max-width: 900px) {
+@media (max-width: 760px) {
   .header {
     text-align: center;
   }
@@ -138,11 +134,12 @@
   }
   .main {
     width: 100%;
-    padding: 0 12px;
+    padding: 0 8px;
+    font-size: 0.9rem;
   }
 
   .container {
-    padding: 0 12px;
+    padding: 0 16px;
   }
 
   .container h3 {
@@ -191,8 +188,7 @@
 
   .main blockquote p,
   .main blockquote footer {
-    width: 100%;
-    margin: 0 0;
+    margin-left: 0;
   }
 
   .main div.table-wrapper,
