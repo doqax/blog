@@ -13,8 +13,8 @@ export default function Layout({ children, isArticle }) {
     <>
       <Head>
         <link rel="icon" href="data;," />
-        <meta name="description" content="My blog" />
-        <meta name="og:title" content={name} />
+        {/* <meta name="description" content="A blog" /> */}
+        <meta name="og:title" content="A blog" />
         <title>{name}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
