@@ -5,6 +5,7 @@ import Sidenote from "./Sidenote/Sidenote";
 import Figure from "./Figure/Figure";
 import ImprovedLink from "./ImprovedLink/ImprovedLink";
 import Title from "./Title/Title";
+import Poem from "./Poem/Poem";
 
 // Improve condition within components
 const Code = dynamic(() => import("./Code/Code"));
@@ -17,8 +18,8 @@ const components = {
   code: (props) => <Code {...props} />,
   a: (props) => <ImprovedLink {...props} />,
   Hr: () => (
-    <div style={{ marginBottom: "3rem", height: "1px", width: "1px" }} />
-  ),
+    <div style={{ marginBottom: "3rem", height: "1px", width: "1px" }} />),
+  Poem: (props) => <Poem {...props} />,
 };
 
 export default function Article({ source, date, title }) {

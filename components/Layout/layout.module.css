@@ -95,6 +95,11 @@
   padding-right: 0;
 }
 
+.main .poem p {
+  margin-top: .4rem;
+  margin-bottom: .4rem;
+}
+
 .main dt:not(:first-child),
 .main li:not(:first-child) {
   margin-top: 0.25rem;

@@ -20,7 +20,7 @@ export default function About() {
         </div>
       </div>
       <p className={styles.text}>
-        Hi. I'm Dorian, just a developer. I live in Charleroi, Belgium. Here's
+        Hi! I'm Dorian, just a developer. I live in Charleroi, Belgium. Here's
         my{" "}
         <Link href="/">
           <a>blog</a>
@@ -37,7 +37,6 @@ export default function About() {
         <ImprovedLink href="https://twitter.com/doqax">
           <BsTwitter />
         </ImprovedLink>
-        {/* <Link href="/"></Link> */}
       </div>
     </section>
   );
